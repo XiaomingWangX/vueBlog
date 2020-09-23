@@ -74,7 +74,7 @@ yum install git
 ```  
 生成证书  --email后填写自己的邮箱   -d 后面填写需要配置证书的域名（支持多个哦）, 我这里域名为: sizegang.cn; 绑定域名为: www.sizegang.cn       
 ```sh 
-  ./letsencrypt-auto certonly --standalone --email 17615195790@163.com -d sizegang.cn -d www.sizegang.cn
+  ./letsencrypt-auto certonly --standalone --email samxwang@163.com -d sizegang.cn -d www.sizegang.cn
 ``` 
  >Let’s Encrypt是支持绑定多域名的，上述两种方法都是只支持单域名。
   

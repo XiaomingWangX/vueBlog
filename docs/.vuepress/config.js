@@ -65,9 +65,8 @@ module.exports = {//添加标题和搜索框功能
             {
                 text: '链接',
                 items: [
-                    {text: '简书', link: 'https://www.jianshu.com/u/56d830aacc6c'},
                     {text: 'GitHub', link: 'https://github.com/XiaomingWangX'},
-                    {text: '码云', link: 'https://gitee.com/6306'},
+                    {text: '码云', link: 'https://gitee.com/630601296'},
                 ]
             }
         ],

@@ -5,7 +5,7 @@ title: 添加多个Ssh Key到一台电脑
 ## 生成ssh-key
 * 生成第一个ssh key，第一个去默认名字，直接一直回车
 ```sh 
-ssh-keygen -t rsa -C "1322287292@qq.com”
+ssh-keygen -t rsa -C "17611677764@qq.com”
 ```
 * 生成第二个ssh key， 在第一个输入的时候，输入一个名字我这里输入的是: id_rsa_github
 #### 这时应该有四个文件
