@@ -5,12 +5,35 @@ title: Redis
 【视频】项目实战-iToken-数据缓存服务-Redis 简介
 ### 什么是 Redis
 Redis 是用 C 语言开发的一个开源的高性能键值对（key-value）数据库。它通过提供多种键值数据类型来适应不同场景下的存储需求，目前为止 Redis 支持的键值数据类型如下：
-
 字符串类型
 散列类型
 列表类型
 集合类型
 有序集合类型
+
+### Redis 为什么快
+1.NIO  epoll=> 1.create epoll fd
+2.NX 分布式锁,不存在就添加 XX是只能更新
+3. 大key hashmap 
+string sds
+list 头尾链表
+hash ziplist 或者 hashtab 判断key/value的长度是否超过规定的长度64个字节，由REDIS_HASH_MAX_ZIPLIST_VALUE定义。如果超过64个字节那么久需要将ziplist转成hashtab对象。
+set intset和hashtable
+zset 一个值 一个score 数据机构 跳表  (有索引的链表)
+多个客户单不一定有顺序 
+### Redis 进阶
+#### 发布订阅
+publish xxoo hello
+必须先监听xxoo  subscribe xxoo 之后有消息
+#### 事务
+multi 开启事务 exec 执行事务
+watch key  然后开启事务  key在事务外被更改 会退回
+#### 内存
+maxmemory
+maxmemory-policy noeviction 
+回收策略 LFU碰了多少次 LRU 多久没碰他
+
+
 ### Redis 的应用场景
 缓存（数据查询、短连接、新闻内容、商品内容等等）
 分布式集群架构中的 session 分离
@@ -19,6 +42,8 @@ Redis 是用 C 语言开发的一个开源的高性能键值对（key-value）�
 应用排行榜
 网站访问统计
 数据过期处理（可以精确到毫秒）
+
+
 
 ## Redis HA 方案
 

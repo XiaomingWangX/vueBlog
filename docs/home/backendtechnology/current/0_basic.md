@@ -16,7 +16,7 @@ title: 多线程基础
 ```java 
 package com.xiangxue.stopthread;
 /**
- * @author: Kevin
+ * @author: sam
  **/
 public class InterruptedTest {
 

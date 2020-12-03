@@ -19,7 +19,7 @@ title: 适配器模式(类兼容、适配、功能合并)
  * @version 1.0
  * @program: springTest
  * @description: 先进的媒体播放器
- * @author: Kevin
+ * @author: sam
  * @create: 2019-06-06 13:11
  **/
 public interface AdvanceMediaPlayer {
@@ -88,7 +88,7 @@ public interface MediaPlayer {
  * @program: springTest
  * @description: 播放器适配器（通过该适配器可以调节不同播放器之间兼容性的问题）
  * 适配器要做到的就是要将传统的播放器和先进的播放器结合，使传统播放器兼容先进播放器
- * @author: Kevin
+ * @author: sam
  * @create: 2019-06-06 13:16
  **/
 //适配器要实现扩展方法，在这里MediaPlayer是要扩展成先进播放器的目标
@@ -131,7 +131,7 @@ public class MediaAdapter implements MediaPlayer {
  * @program: springTest
  * @description: 播放器（当前播放器是适配器结合完成的结合体，兼容各种传统和先进播放器的所有功能）
  *                最终要实现的 兼容播放器
- * @author: Kevin
+ * @author: sam
  * @create: 2019-06-06 13:13
  **/
 public class CompatiblePlayer implements MediaPlayer {
@@ -158,7 +158,7 @@ public class CompatiblePlayer implements MediaPlayer {
  * @version 1.0
  * @program: springTest
  * @description: 适配器模式测试方法
- * @author: Kevin
+ * @author: sam
  * @create: 2019-06-06 13:32
  **/
 public class Test {

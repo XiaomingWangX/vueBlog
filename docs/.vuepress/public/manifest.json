@@ -1,10 +1,10 @@
 
 {
-  "name": "kevin",
-  "short_name": "kevin",
+  "name": "sam",
+  "short_name": "sam",
   "display": "standalone",
   "background_color": "#fff",
-  "description": "kevin",
+  "description": "sam",
   "start_url": "index.html",
   "orientation": "landscape",
   "icons": [{

@@ -9,8 +9,11 @@ module.exports = {
     trap: pwcUtil.getFileNameArray("/home/openuphorizons/trap"),//技术陷阱
     interview: pwcUtil.getFileNameArray("/home/openuphorizons/interview"),//面试宝典
     java: pwcUtil.getFileNameArray("/home/backendtechnology/java"),//JAVA
+    video: pwcUtil.getFileNameArray("/home/backendtechnology/video"),//video
     microservice: pwcUtil.getFileNameArray("/home/backendtechnology/microservice"),//微服务
-    middleware: pwcUtil.getFileNameArray("/home/backendtechnology/middleware"),//中间件
+    redis: pwcUtil.getFileNameArray("/home/backendtechnology/redis"),//redis
+    es: pwcUtil.getFileNameArray("/home/backendtechnology/es"),//es
+    jvm: pwcUtil.getFileNameArray("/home/backendtechnology/jvm"),//jvm
     database: pwcUtil.getFileNameArray("/home/backendtechnology/database"),//数据库
     vue: pwcUtil.getFileNameArray("/home/fronttechnology/vue"),//VUE权威指南
     ownstudy: pwcUtil.getFileNameArray("/home/fronttechnology/vue/ownstudy"),//vue个人阅读

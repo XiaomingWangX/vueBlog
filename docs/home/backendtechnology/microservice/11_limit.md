@@ -279,7 +279,7 @@ import java.lang.annotation.*;
  * @version 1.0
  * @program: springTest
  * @description:
- * @author: Kevin
+ * @author: sam
  * @create: 2019-09-20 17:44
  **/
 @Target({ElementType.METHOD})
@@ -322,7 +322,7 @@ import java.util.concurrent.TimeUnit;
  * @version 1.0
  * @program: springTest
  * @description:
- * @author: Kevin
+ * @author: sam
  * @create: 2019-09-20 18:21
  **/
 @Aspect
@@ -384,7 +384,7 @@ public class GuavaAop {
   * @version 1.0
   * @program: springTest
   * @description: 订单控制器
-  * @author: Kevin
+  * @author: sam
   * @create: 2019-09-20 17:43
   **/
  @RestController
@@ -443,7 +443,7 @@ public class GuavaAop {
   * @version 1.0
   * @program: springTest
   * @description:
-  * @author: Kevin
+  * @author: sam
   * @create: 2019-09-20 17:44
   **/
  @Target({ElementType.METHOD})
@@ -491,7 +491,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @version 1.0
  * @program: springTest
  * @description:
- * @author: Kevin
+ * @author: sam
  * @create: 2019-09-20 18:21
  **/
 @Aspect

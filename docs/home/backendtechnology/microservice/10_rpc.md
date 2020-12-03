@@ -44,7 +44,7 @@ package provider;
  * @version 1.0
  * @program: springTest
  * @description:
- * @author: Kevin
+ * @author: sam
  * @create: 2019-09-05 22:22
  **/
 
@@ -67,12 +67,12 @@ import java.lang.annotation.Target;
  * @version 1.0
  * @program: springTest
  * @description: 该注解是服务发布的注解
- * @author: Kevin
+ * @author: sam
  * @create: 2019-09-05 22:37
  **/
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface KevinRpc {
+public @interface samRpc {
 
 
     /**
@@ -101,7 +101,7 @@ import java.io.Serializable;
  * @version 1.0
  * @program: springTest
  * @description: 统一传输对象
- * @author: Kevin
+ * @author: sam
  * @create: 2019-09-05 22:55
  **/
 public class RpcRequest   implements Serializable {
@@ -164,7 +164,7 @@ public class RpcRequest   implements Serializable {
 ```java 
 package com.rpc.server;
 
-import provider.KevinRpc;
+import provider.samRpc;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -178,7 +178,7 @@ import java.util.concurrent.Executors;
  * @version 1.0
  * @program: springTest
  * @description:
- * @author: Kevin
+ * @author: sam
  * @create: 2019-09-05 22:35
  **/
 public class RpcServer {
@@ -222,8 +222,8 @@ public class RpcServer {
 
     public void bind(Object... services) {
         for (Object service : services) {
-            //绑定的服务，必须添加KevinRpc注解，否则无法绑定
-            KevinRpc annotation = service.getClass().getAnnotation(KevinRpc.class);//如果服务上添加了这个注解，说明注册了服务
+            //绑定的服务，必须添加samRpc注解，否则无法绑定
+            samRpc annotation = service.getClass().getAnnotation(samRpc.class);//如果服务上添加了这个注解，说明注册了服务
             if (annotation == null)
                 continue;
             //发布接口的class
@@ -252,7 +252,7 @@ import java.util.Map;
  * @version 1.0
  * @program: springTest
  * @description: 使用反射执行服务方法, 因为是开启线程池执行的，所以这里要实现Runnable
- * @author: Kevin
+ * @author: sam
  * @create: 2019-09-05 22:43
  **/
 public class ProcessorHandler implements Runnable {
@@ -343,7 +343,7 @@ import provider.IRpcService;
  * @version 1.0
  * @program: springTest
  * @description:
- * @author: Kevin
+ * @author: sam
  * @create: 2019-09-05 23:08
  **/
 public class RpcServerTest {
@@ -360,16 +360,16 @@ public class RpcServerTest {
 package com.rpc.server;
 
 import provider.IRpcService;
-import provider.KevinRpc;
+import provider.samRpc;
 
 /**
  * @version 1.0
  * @program: springTest
  * @description:
- * @author: Kevin
+ * @author: sam
  * @create: 2019-09-05 22:23
  **/
-@KevinRpc(value = IRpcService.class)// 这里必须是接口的名字， 在 客户端那里只能使用接口调用，所以这里要使用接口的名字
+@samRpc(value = IRpcService.class)// 这里必须是接口的名字， 在 客户端那里只能使用接口调用，所以这里要使用接口的名字
 public class RpcServiceImpl implements IRpcService {
 
     public String sayHello(String txt) {
@@ -413,7 +413,7 @@ import provider.IRpcService;
  * @version 1.0
  * @program: springTest
  * @description:
- * @author: Kevin
+ * @author: sam
  * @create: 2019-09-05 22:25
  **/
 public class RpcClient {
@@ -437,7 +437,7 @@ import java.lang.reflect.Proxy;
  * @version 1.0
  * @program: springTest
  * @description: rpc客户端代理类
- * @author: Kevin
+ * @author: sam
  * @create: 2019-09-05 23:14
  **/
 public class RpcClientProxy {
@@ -469,7 +469,7 @@ import java.net.Socket;
  * @version 1.0
  * @program: springTest
  * @description:
- * @author: Kevin
+ * @author: sam
  * @create: 2019-09-05 23:39
  **/
 public class RpcClientHandler implements InvocationHandler {
@@ -544,7 +544,7 @@ E:\java\jdk1.8\bin\java.exe "
 
 * 启动服务消费者 调用服务 (这里是启动上面的 <code>RpcClient</code> 类)
  ```sh 
- hello rpc kevin
+ hello rpc sam
  ```
  
  * 再回来看服务端控制台

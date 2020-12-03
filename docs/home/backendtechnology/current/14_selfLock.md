@@ -6,7 +6,7 @@ title: 自己实现锁
 /**
  * @version 1.0
  * @description: 这是一个不可重入锁，如果 重复lock会产生死锁
- * @author: Kevin
+ * @author: sam
  * @create: 2019-08-27 00:16
  **/
 public class SLock {
@@ -43,7 +43,7 @@ import java.util.concurrent.locks.Lock;
  * @version 1.0
  * @program: springTest
  * @description:
- * @author: Kevin
+ * @author: sam
  * @create: 2019-08-27 00:19
  **/
 public class Test {
@@ -108,7 +108,7 @@ import java.util.concurrent.locks.Lock;
  * @version 1.0
  * @program: springTest
  * @description:
- * @author: Kevin
+ * @author: sam
  * @create: 2019-08-27 00:19
  **/
 public class Test {

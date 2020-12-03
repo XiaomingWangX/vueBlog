@@ -8,7 +8,7 @@ package com.design.chain;
  * @version 1.0
  * @program: springTest
  * @description: 处理者一
- * @author: Kevin
+ * @author: sam
  * @create: 2019-08-26 10:10
  **/
 public class ConcreteHandlerOne extends  Handler {
@@ -32,7 +32,7 @@ package com.design.chain;
  * @version 1.0
  * @program: springTest
  * @description:
- * @author: Kevin
+ * @author: sam
  * @create: 2019-08-26 10:13
  **/
 public class ConcreteHandlerTwo extends Handler {
@@ -55,7 +55,7 @@ package com.design.chain;
  * @version 1.0
  * @program: springTest
  * @description: 抽象处理器
- * @author: Kevin
+ * @author: sam
  * @create: 2019-08-26 09:56
  **/
 public abstract class Handler {
@@ -107,7 +107,7 @@ package com.design.chain;
  * @version 1.0
  * @program: springTest
  * @description: 初始化处理链
- * @author: Kevin
+ * @author: sam
  * @create: 2019-08-26 10:10
  **/
 public class InitHandler {
@@ -129,7 +129,7 @@ package com.design.chain;
  * @version 1.0
  * @program: 在当前处理链程序中，如果你不设置level级别，那么可以 按照顺序所有的处理链上的处理者进行执行
  * @description:
- * @author: Kevin
+ * @author: sam
  * @create: 2019-08-26 10:14
  **/
 public class Test {

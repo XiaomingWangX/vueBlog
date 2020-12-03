@@ -18,7 +18,7 @@ import java.util.function.Consumer;
  * @version 1.0
  * @program: springTest
  * @description: 用阻塞队列实现生产者消费者模式, 调用 Concurrent 原生阻塞队列
- * @author: Kevin
+ * @author: sam
  * @create: 2019-07-03 22:34
  **/
 public class QueueImplProductCustome {

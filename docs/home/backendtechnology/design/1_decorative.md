@@ -23,7 +23,7 @@ title: 装饰器模式（功能扩展、可以解决继承弊端）
  * @version 1.0
  * @program: springTest
  * @description: 装饰模式，车接口 抽象组件
- * @author: Kevin
+ * @author: sam
  * @create: 2019-06-05 00:31
  **/
 
@@ -38,7 +38,7 @@ public interface Icar {
  * @version 1.0
  * @program:    装饰模式
  * @description: 要被装饰的类
- * @author: Kevin
+ * @author: sam
  * @create: 2019-06-05 00:33
  **/
 public class Car implements  Icar {
@@ -55,7 +55,7 @@ public class Car implements  Icar {
   * @version 1.0
   * @program: springTest
   * @description: 装饰角色   (持有一个构建对象的实例，并定义一个与抽象构件接口一致的接口)
-  * @author: Kevin
+  * @author: sam
   * @create: 2019-06-05 00:34
   **/
  public class DecorativeCar implements  Icar {
@@ -75,7 +75,7 @@ public class Car implements  Icar {
   * @version 1.0
   * @program: springTest
   * @description: 具体装饰角色
-  * @author: Kevin
+  * @author: sam
   * @create: 2019-06-05 00:35
   **/
  public class FlyCar extends DecorativeCar {

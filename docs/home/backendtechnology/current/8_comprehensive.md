@@ -176,7 +176,7 @@ import java.util.concurrent.*;
  * @version 1.0
  * @program: 展示Future的缺点---》 阻塞
  * @description:
- * @author: Kevin
+ * @author: sam
  * @create: 2019-07-03 10:42
  **/
 public class MyFuture {
@@ -226,7 +226,7 @@ import java.util.concurrent.*;
  * @version 1.0
  * @program: springTest
  * @description:
- * @author: Kevin
+ * @author: sam
  * @create: 2019-07-03 10:50
  **/
 public class MyComplateService {
@@ -292,7 +292,7 @@ import java.util.concurrent.ThreadFactory;
  * @description: 自定义的线程工厂
  *          Executors  在创建线程的时候，如果不传入线程工厂，内部会调用默认的线程工厂 在Executors中，如果传递线程工厂则用自定义的线程工厂
  *          static class DefaultThreadFactory implements ThreadFactory
- * @author: Kevin
+ * @author: sam
  * @create: 2019-06-22 19:02
  **/
 public class MyThreadFactory implements ThreadFactory {

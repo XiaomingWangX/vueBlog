@@ -64,7 +64,7 @@ new Thread(myThread).start();
  * @program: springTest
  * @description: Java自带的观察者模式
  * 如果直接通过  notifyObservers 方法发布消息，并不能产生结果，要重写发布器的change方法，这样才会真正发布了
- * @author: Kevin
+ * @author: sam
  * @create: 2019-06-27 23:10
  **/
 public class JdkObserver {

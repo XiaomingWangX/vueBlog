@@ -85,7 +85,7 @@ public class FutureAndCallable {
      *  * 为了解决这种情况，可以采用轮询的做法。
      *
      * @description:
-     * @author: Kevin
+     * @author: sam
      **/
     
     

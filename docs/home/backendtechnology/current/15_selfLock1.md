@@ -21,7 +21,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * 消费者线程在执行了while(lists.size()==0)中的this.wait()方法后进入阻塞状态，此时被唤醒的消费者线程也进入阻塞状态，程序死锁。
  *
  * @description:
- * @author: Kevin
+ * @author: sam
  * @create: 2019-07-03 16:56
  **/
 public class LockQueueByHand {

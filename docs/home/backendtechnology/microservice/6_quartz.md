@@ -70,7 +70,7 @@ import org.springframework.stereotype.Component;
  * @version 1.0
  * @program: atms
  * @description:
- * @author: Kevin
+ * @author: sam
  * @create: 2019-08-28 00:25
  **/
 
@@ -117,7 +117,7 @@ import pwc.taxtech.quartz.job.CheckStatusTask;
  * @version 1.0
  * @program: atms
  * @description:
- * @author: Kevin
+ * @author: sam
  * @create: 2019-08-27 23:22
  **/
 @Configuration
@@ -227,7 +227,7 @@ import java.util.Properties;
  * @version 1.0
  * @program: atms
  * @description:
- * @author: Kevin
+ * @author: sam
  * @create: 2019-08-27 23:22
  **/
 @Configuration
@@ -285,7 +285,7 @@ import org.springframework.stereotype.Component;
  * @version 1.0
  * @program: atms
  * @description:
- * @author: Kevin
+ * @author: sam
  * @create: 2019-08-28 00:25
  **/
 
@@ -316,7 +316,7 @@ import org.springframework.scheduling.quartz.SpringBeanJobFactory;
  * @version 1.0
  * @program: atms
  * @description:
- * @author: Kevin
+ * @author: sam
  * @create: 2019-08-28 00:16
  **/
 public final class AutowiringSpringBeanJobFactory extends SpringBeanJobFactory implements
@@ -356,7 +356,7 @@ import static org.quartz.CronScheduleBuilder.cronSchedule;
  * @version 1.0
  * @program: atms
  * @description:
- * @author: Kevin
+ * @author: sam
  * @create: 2019-08-28 00:18
  **/
 @Component

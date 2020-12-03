@@ -15,7 +15,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * @version 1.0
  * @program: springTest
  * @description: 手写阻塞队列 通过Condition 唤醒等待
- * @author: Kevin
+ * @author: sam
  * @create: 2019-06-19 00:50
  **/
 public class HandBlockQueue {

@@ -155,7 +155,7 @@ package com.design.builder;
  * @version 1.0
  * @program: springTest
  * @description: 电脑类，通过建造者模式建造一个复杂的类， 这里使用链式的建造者模式
- * @author: Kevin
+ * @author: sam
  * @create: 2019-09-10 00:20
  **/
 public class Computer {
@@ -235,7 +235,7 @@ package com.design.builder;
  * @version 1.0
  * @program: springTest
  * @description:
- * @author: Kevin
+ * @author: sam
  * @create: 2019-09-10 00:29
  **/
 public class Test {

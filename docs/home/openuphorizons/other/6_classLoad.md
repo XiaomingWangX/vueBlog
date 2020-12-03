@@ -12,7 +12,7 @@ import java.io.*;
  * @version 1.0
  * @program: springTest
  * @description: 类的加解密工具
- * @author: Kevin
+ * @author: sam
  * @create: 2019-09-10 14:00
  **/
 public class EDClassUtils {
@@ -80,7 +80,7 @@ import java.io.IOException;
  * @version 1.0
  * @program: springTest
  * @description: 自定义的类加载器
- * @author: Kevin
+ * @author: sam
  * @create: 2019-09-10 14:02
  **/
 public class CustomClassLoader extends ClassLoader {
@@ -121,7 +121,7 @@ package com.xiangxue.classloader;
  * @version 1.0
  * @program: springTest
  * @description:
- * @author: Kevin
+ * @author: sam
  * @create: 2019-09-10 14:20
  **/
 public class Test {

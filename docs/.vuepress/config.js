@@ -22,33 +22,6 @@ module.exports = {//添加标题和搜索框功能
             {text: '首页', link: '/'},
             {
                 text: '学习总结',
-                /*items: [
-                    {
-                        text: "后端栈",
-                        items: [{text: 'JAVA', link: '/backendtechnology/java/'},
-                            {text: '微服务', link: '/backendtechnology/microservice/'},
-                            {text: '中间件', link: '/backendtechnology/middleware/'},
-                            {text: '数据库', link: '/backendtechnology/database/'},
-                            {text: '并发编程', link: '/backendtechnology/current/'},
-                            {text: '部署', link: '/backendtechnology/deploy/'},
-                            {text: '框架', link: '/backendtechnology/frame/'},
-                            {text: '设计模式', link: '/backendtechnology/design/'}
-                        ],
-
-                    }, {
-                        text: "前端栈",
-                        items: [{text: 'Javascript', link: '/fronttechnology/javascript/'},
-                            {text: 'Vue', link: '/fronttechnology/vue/'}]
-                    },
-                    {
-                        text: '开拓视野',
-                        items: [
-                            {text: '面试宝典', link: '/openuphorizons/interview/'},
-                            {text: '拓展', link: '/openuphorizons/other/'},
-                            {text: '陷阱', link: '/openuphorizons/trap/'}
-                        ]
-                    }
-                ]*/
                 link: '/home/'
 
             },
@@ -92,149 +65,10 @@ module.exports = {//添加标题和搜索框功能
                 ],
                 "/backendtechnology/java/": [],
                 "/backendtechnology/microservice/": [
-                    /*{
-                        title: '微服务',
-                        path: '/backendtechnology/microservice/',
-                        collapsable: true, // 可选的, 默认值是 true,
-                        sidebarDepth: 2,    // 可选的, 默认值是 1
-                        children: urlPattern.pattern(routers.microservice, '/backendtechnology/microservice/')
-                    }*/,
-                ],
-                "/backendtechnology/middleware/": [
-                    /*{
-                        title: '中间件',
-                        path: '/backendtechnology/middleware/',
-                        collapsable: true, // 可选的, 默认值是 true,
-                        sidebarDepth: 2,    // 可选的, 默认值是 1
-                        children: urlPattern.pattern(routers.middleware, '/backendtechnology/middleware/')
-                    }*/,
-                ],
-                "/backendtechnology/database/": [
-                    /*{
-                        title: '数据库',
-                        path: '/backendtechnology/database/',
-                        collapsable: true, // 可选的, 默认值是 true,
-                        sidebarDepth: 2,    // 可选的, 默认值是 1
-                        children: urlPattern.pattern(routers.database, '/backendtechnology/database/')
-                    }*/,
-                ],
-                "/backendtechnology/current/": [
-                    /*{
-                        title: '并发编程',
-                        path: '/backendtechnology/current/',
-                        collapsable: true, // 可选的, 默认值是 true,
-                        sidebarDepth: 2,    // 可选的, 默认值是 1
-                        children: urlPattern.pattern(routers.current, '/backendtechnology/current/')
-                    }*/,
-                ],
-                "/backendtechnology/deploy/": [
-                    /*{
-                        title: '部署',
-                        path: '/backendtechnology/deploy/',
-                        collapsable: true, // 可选的, 默认值是 true,
-                        sidebarDepth: 2,    // 可选的, 默认值是 1
-                        children: urlPattern.pattern(routers.deploy, '/backendtechnology/deploy/')
-                    }*/,
-                    /*{
-                        title: '平台即服务',
-                        path: '/backendtechnology/deploy/deployplatform/',
-                        collapsable: true, // 可选的, 默认值是 true,
-                        sidebarDepth: 2,    // 可选的, 默认值是 1
-                        children: urlPattern.pattern(routers.deployplatform, '/backendtechnology/deploy/deployplatform/')
-                    }*/,
-                    /*{
-                        title: 'Docker安装',
-                        path: '/backendtechnology/deploy/dockerinstall/',
-                        collapsable: true, // 可选的, 默认值是 true,
-                        sidebarDepth: 2,    // 可选的, 默认值是 1
-                        children: urlPattern.pattern(routers.dockerinstall, '/backendtechnology/deploy/dockerinstall/')
-                    }*/,
 
                 ],
-                "/backendtechnology/frame/": [
-                    /*{
-                        title: 'spring',
-                        path: '/backendtechnology/frame/',
-                        collapsable: true, // 可选的, 默认值是 true,
-                        sidebarDepth: 2,    // 可选的, 默认值是 1
-                        children: urlPattern.pattern(routers.spring, '/backendtechnology/frame/spring/')
-                    }*/
-                ],
-                "/backendtechnology/design/": [
-                    /*{
-                        title: '设计模式',
-                        path: '/backendtechnology/design/',
-                        collapsable: true, // 可选的, 默认值是 true,
-                        sidebarDepth: 2,    // 可选的, 默认值是 1
-                        children: urlPattern.pattern(routers.design, '/backendtechnology/design/')
-                    }*/
-                ],
-                "/openuphorizons/other/": [
-                    /*{
-                        title: '技术拓展',
-                        path: '/openuphorizons/other/',
-                        collapsable: true, // 可选的, 默认值是 true,
-                        sidebarDepth: 2,    // 可选的, 默认值是 1
-                        children: urlPattern.pattern(routers.other, '/openuphorizons/other/')
-                    }*/,
-                ],
-                "/openuphorizons/trap/": [
-                    /*{
-                        title: '技术陷阱',
-                        path: '/openuphorizons/trap/',
-                        collapsable: true, // 可选的, 默认值是 true,
-                        sidebarDepth: 2,    // 可选的, 默认值是 1
-                        children: urlPattern.pattern(routers.trap, '/openuphorizons/trap/')
-                    }*/,
-                ],
-                "/openuphorizons/interview/": [
-                    /*{
-                        title: '面试宝典',
-                        path: '/openuphorizons/interview/',
-                        collapsable: true, // 可选的, 默认值是 true,
-                        sidebarDepth: 2,    // 可选的, 默认值是 1
-                        children: urlPattern.pattern(routers.interview, '/openuphorizons/interview/')
-                    }*/,
-                ],
-                "/fronttechnology/vue/": [
-                    /*{
-                        title: 'Vue指南',
-                        path: '/fronttechnology/vue/',
-                        collapsable: true, // 可选的, 默认值是 true,
-                        sidebarDepth: 2,    // 可选的, 默认值是 1
-                        children: urlPattern.pattern(routers.vue, '/fronttechnology/vue/')
-                    }*/,
-                    /*{
-                        title: 'Vue官方文档个人阅读',
-                        path: '/fronttechnology/vue/ownstudy/',
-                        collapsable: true, // 可选的, 默认值是 true,
-                        sidebarDepth: 2,    // 可选的, 默认值是 1
-                        children: urlPattern.pattern(routers.ownstudy, '/fronttechnology/vue/ownstudy/')
-                    }*/,
-                ],
-                "/fronttechnology/javascript/": [
-                    /*{
-                        title: 'Javascript指南',
-                        path: '/fronttechnology/javascript/',
-                        collapsable: true, // 可选的, 默认值是 true,
-                        sidebarDepth: 2,    // 可选的, 默认值是 1
-                        children: urlPattern.pattern(routers.javascript, '/fronttechnology/javascript/')
-                    }*/,
-                ],
                 "/home/": [
-                    /*{
-                        title: '指南',
-                        path: '/home/',
-                        collapsable: true, // 可选的, 默认值是 true,
-                        sidebarDepth: 2,    // 可选的, 默认值是 1
-                        children: [{
-                            title: '后端栈',
-                            path: '/home/',
-                            collapsable: true, // 可选的, 默认值是 true,
-                            sidebarDepth: 2,    // 可选的, 默认值是 1
-                        }
-                        ]
-                    },*/
+
                     {
                         title: "后端栈",
                         path: '/home/',
@@ -249,6 +83,13 @@ module.exports = {//添加标题和搜索框功能
                                 children: urlPattern.pattern(routers.java, '/home/backendtechnology/java/')
                             },
                             {
+                                title: 'JVM',
+                                path: '/home/backendtechnology/jvm/',
+                                collapsable: true, // 可选的, 默认值是 true,
+                                sidebarDepth: 2,    // 可选的, 默认值是 1
+                                children: urlPattern.pattern(routers.jvm, '/home/backendtechnology/jvm/')
+                            },
+                            {
                                 title: '微服务',
                                 path: '/home/backendtechnology/microservice/',
                                 collapsable: true, // 可选的, 默认值是 true,
@@ -256,11 +97,18 @@ module.exports = {//添加标题和搜索框功能
                                 children: urlPattern.pattern(routers.microservice, '/home/backendtechnology/microservice/')
                             },
                             {
-                                title: '中间件',
-                                path: '/home/backendtechnology/middleware/',
+                                title: 'redis',
+                                path: '/home/backendtechnology/redis/',
                                 collapsable: true, // 可选的, 默认值是 true,
                                 sidebarDepth: 2,    // 可选的, 默认值是 1
-                                children: urlPattern.pattern(routers.middleware, '/home/backendtechnology/middleware/')
+                                children: urlPattern.pattern(routers.redis, '/home/backendtechnology/redis/')
+                            },
+                            {
+                                title: 'es',
+                                path: '/home/backendtechnology/es/',
+                                collapsable: true, // 可选的, 默认值是 true,
+                                sidebarDepth: 2,    // 可选的, 默认值是 1
+                                children: urlPattern.pattern(routers.es, '/home/backendtechnology/es/')
                             },
                             {
                                 title: '数据库',
@@ -318,6 +166,13 @@ module.exports = {//添加标题和搜索框功能
                                 collapsable: true, // 可选的, 默认值是 true,
                                 sidebarDepth: 2,    // 可选的, 默认值是 1
                                 children: urlPattern.pattern(routers.datastructure, '/home/backendtechnology/datastructure/')
+                            },
+                            {
+                                title: '流媒体',
+                                path: '/home/backendtechnology/video/',
+                                collapsable: true, // 可选的, 默认值是 true,
+                                sidebarDepth: 2,    // 可选的, 默认值是 1
+                                children: urlPattern.pattern(routers.video, '/home/backendtechnology/video/')
                             }
                         ]
                     },
