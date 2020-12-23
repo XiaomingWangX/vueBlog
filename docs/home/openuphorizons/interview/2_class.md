@@ -347,7 +347,7 @@ public class com.xiangxue.spring.cap1.Demo1 {
  
  CMS收集器的运行过程分为下列4步：
  
- **初始标记**：标记GC Roots能直接到的对象。速度很快但是仍存在Stop The World问题。
+ **初始标记**：标记GC Roots(线程栈变量 静态变量 常量池 JNI指针)能直接到的对象。速度很快但是仍存在Stop The World问题。
  
  **并发标记**：进行GC Roots Tracing 的过程，找出存活对象且用户线程可并发执行。
  

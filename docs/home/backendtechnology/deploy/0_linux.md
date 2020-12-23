@@ -23,6 +23,22 @@ title: Linux基本技术
    ## XShell
    XShell 是一个强大的安全终端模拟软件，它支持 SSH1, SSH2, 以及 Microsoft Windows 平台的 TELNET 协议。XShell 通过互联网到远程主机的安全连接以及它创新性的设计和特色帮助用户在复杂的网络环境中享受他们的工作。
    
+   
+   ## linux排查等常用命令
+   netstat -anlp | grep '端口' 
+   得到 pid 比如12000
+   ps -Lf 12000|wc -l  --这个是查看线程数
+   1. ps -T -p 12000  查看进程的具体线程
+   2. top -H -p 12000 查看进程的具体线程
+   
+   jps 可以获取java进程pid
+   java 线程死锁排查 jstack -l  pid
+   
+   ps -e -o pid,comm,args,rsz --sort=+rsz  查看所有的进程 看看占用的内存什么的
+
+
+   
+   
    ## Linux 用户和组管理
   ## 概述
   Linux 操作系统是一个多用户操作系统，它允许多用户同时登录到系统上并使用资源。系统会根据账户来区分每个用户的文件，进程，任务和工作环境，使得每个用户工作都不受干扰。

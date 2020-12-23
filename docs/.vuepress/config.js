@@ -104,6 +104,13 @@ module.exports = {//添加标题和搜索框功能
                                 children: urlPattern.pattern(routers.redis, '/home/backendtechnology/redis/')
                             },
                             {
+                                title: 'Spring',
+                                path: '/home/backendtechnology/frame/',
+                                collapsable: true, // 可选的, 默认值是 true,
+                                sidebarDepth: 2,    // 可选的, 默认值是 1
+                                children: urlPattern.pattern(routers.spring, '/home/backendtechnology/frame/spring/')
+                            },
+                            {
                                 title: 'es',
                                 path: '/home/backendtechnology/es/',
                                 collapsable: true, // 可选的, 默认值是 true,
@@ -145,13 +152,7 @@ module.exports = {//添加标题和搜索框功能
                                 sidebarDepth: 2,    // 可选的, 默认值是 1
                                 children: urlPattern.pattern(routers.dockerinstall, '/home/backendtechnology/deploy/dockerinstall/')
                             },
-                            {
-                                title: 'Spring',
-                                path: '/home/backendtechnology/frame/',
-                                collapsable: true, // 可选的, 默认值是 true,
-                                sidebarDepth: 2,    // 可选的, 默认值是 1
-                                children: urlPattern.pattern(routers.spring, '/home/backendtechnology/frame/spring/')
-                            },
+
                             {
                                 title: '设计模式',
                                 path: '/home/backendtechnology/design/',

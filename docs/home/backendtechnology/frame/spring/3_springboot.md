@@ -1,6 +1,8 @@
 ---
 title: SpringBoot
 ---
+
+
 ## 启动
 入口:@SpringBootApplication
 SpringApplication.run() 方法。
