@@ -177,7 +177,7 @@ module.exports = {//添加标题和搜索框功能
                             }
                         ]
                     },
-                    {
+                    /*{
                         title: "前端栈",
                         path: '/home/',
                         collapsable: true, // 可选的, 默认值是 true,
@@ -206,9 +206,9 @@ module.exports = {//添加标题和搜索框功能
                             }
 
                         ]
-                    },
+                    },*/
                     {
-                        title: "开拓视野",
+                        title: "运维等拓展",
                         path: '/home/',
                         collapsable: true, // 可选的, 默认值是 true,
                         sidebarDepth: 2,    // 可选的, 默认值是 1
@@ -237,22 +237,7 @@ module.exports = {//添加标题和搜索框功能
                             }
                         ]
                     },
-                    {
-                        title: "微服务架构",
-                        path: '/home/',
-                        collapsable: true, // 可选的, 默认值是 true,
-                        sidebarDepth: 2,    // 可选的, 默认值是 1
-                        sidebar: false,
-                        children:[
-                            {
-                                title: '微服务架构2.0',
-                                path: '/home/cloud/cloud2.0/',
-                                collapsable: true, // 可选的, 默认值是 true,
-                                sidebarDepth: 2,    // 可选的, 默认值是 1
-                                children: urlPattern.pattern(routers.cloud, '/home/cloud/cloud2.0/')
-                            }
-                        ]
-                    }
+
                 ],
             }
         ,
