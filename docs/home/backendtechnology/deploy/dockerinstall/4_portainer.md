@@ -9,7 +9,7 @@ services:
   portainer:
     restart: always
     image: portainer/portainer
-    container_name: sizegang-portainer
+    container_name: xiaoming-portainer
     ports:
       - 7000:7000
       - 9000:9000

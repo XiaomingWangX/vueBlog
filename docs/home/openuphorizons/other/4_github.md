@@ -56,14 +56,14 @@ IdentityFile 要写 /
 Host github.com
 HostName github.com
 PreferredAuthentications publickey
-IdentityFile C:/Users/sizegang/.ssh/id_rsa_github
+IdentityFile C:/Users/xiaoming/.ssh/id_rsa_github
 User Samdoc
  
 # github.com
 Host github.com
 HostName github.com
 PreferredAuthentications publickey
-IdentityFile C:/Users/sizegang/.ssh/id_rsa
+IdentityFile C:/Users/xiaoming/.ssh/id_rsa
 User Samdoc123
 ```
 ## 5.测试

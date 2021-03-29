@@ -65,15 +65,15 @@ http {
     include /etc/nginx/conf.d/*.conf;
 	server{
 	listen 80;
-        	server_name www.sizegang.cn;
-        	return 301 https://www.sizegang.cn$request_uri;
+        	server_name www.xiaoming.cn;
+        	return 301 https://www.xiaoming.cn$request_uri;
 	}	
     	server {
 
 	listen 443 ssl http2;
 	ssl on;
-	ssl_certificate  /etc/letsencrypt/live/www.sizegang.cn/fullchain.pem;
-        	ssl_certificate_key  /etc/letsencrypt/live/www.sizegang.cn/privkey.pem;       	
+	ssl_certificate  /etc/letsencrypt/live/www.xiaoming.cn/fullchain.pem;
+        	ssl_certificate_key  /etc/letsencrypt/live/www.xiaoming.cn/privkey.pem;       	
 	ssl_session_cache shared:SSL:1m;
         	ssl_session_timeout  10m;
         	ssl_ciphers HIGH:!aNULL:!MD5;

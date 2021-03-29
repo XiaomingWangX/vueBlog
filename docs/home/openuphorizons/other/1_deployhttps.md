@@ -72,15 +72,15 @@ yum install git
 ```sh 
   cd letsencrypt   
 ```  
-生成证书  --email后填写自己的邮箱   -d 后面填写需要配置证书的域名（支持多个哦）, 我这里域名为: sizegang.cn; 绑定域名为: www.sizegang.cn       
+生成证书  --email后填写自己的邮箱   -d 后面填写需要配置证书的域名（支持多个哦）, 我这里域名为: xiaoming.cn; 绑定域名为: www.xiaoming.cn       
 ```sh 
-  ./letsencrypt-auto certonly --standalone --email samxwang@163.com -d sizegang.cn -d www.sizegang.cn
+  ./letsencrypt-auto certonly --standalone --email samxwang@163.com -d xiaoming.cn -d www.xiaoming.cn
 ``` 
  >Let’s Encrypt是支持绑定多域名的，上述两种方法都是只支持单域名。
   
 ## 免费SSL证书获取与应用
   
-  在完成Let’s Encrypt证书的生成之后，我们会在"/etc/letsencrypt/live/www.sizegang.cn/" 域名目录下有4个文件就是生成的密钥证书文件。
+  在完成Let’s Encrypt证书的生成之后，我们会在"/etc/letsencrypt/live/www.xiaoming.cn/" 域名目录下有4个文件就是生成的密钥证书文件。
   
   cert.pem - Apache服务器端证书
   chain.pem - Apache根证书和中继证书
@@ -124,15 +124,15 @@ yum install git
       include /etc/nginx/conf.d/*.conf;
   	server{
   	listen 80;
-          	server_name www.sizegang.cn;
-          	return 301 https://www.sizegang.cn$request_uri;
+          	server_name www.xiaoming.cn;
+          	return 301 https://www.xiaoming.cn$request_uri;
   	}	
       	server {
   
   	listen 443 ssl http2; #这里要在阿里云服务器上开放端口，如果你用的别的服务器，可以去指定服务器厂商控制台开放端口，好像默认是开放的，看一下
   	ssl on; #打开ssl
-  	ssl_certificate  /etc/letsencrypt/live/www.sizegang.cn/fullchain.pem; #这里的路径要指定正确
-          	ssl_certificate_key  /etc/letsencrypt/live/www.sizegang.cn/privkey.pem;    #这里的路径要指定正确 上文中生成的整数路径   	
+  	ssl_certificate  /etc/letsencrypt/live/www.xiaoming.cn/fullchain.pem; #这里的路径要指定正确
+          	ssl_certificate_key  /etc/letsencrypt/live/www.xiaoming.cn/privkey.pem;    #这里的路径要指定正确 上文中生成的整数路径   	
   	ssl_session_cache shared:SSL:1m;
           	ssl_session_timeout  10m;
           	ssl_ciphers HIGH:!aNULL:!MD5;
@@ -175,14 +175,14 @@ yum install git
  下面是配置整数自动更新（Let’s Encrypt证书是有效期90天）
  ## 证书自动续期，实现真正的永久免费使用
 ``` sh
-vim /home/sizegang/https/updatessl.sh    //创建一个名字为updatessl的脚本  这里你可以自定义路径
+vim /home/xiaoming/https/updatessl.sh    //创建一个名字为updatessl的脚本  这里你可以自定义路径
 ```
  然后在脚本里添加如下代码。
 ```sh 
 #!/bin/bash
 # 我的updatessl.sh  文件和 letsencrypt文件在同一目录下，所以这样写，你们可以自定义目录，只要正确即可
 PATH=/etc:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
-/home/sizegang/https/letsencrypt/certbot-auto renew --force-renew --pre-hook "service nginx stop" --post-hook "service nginx start"
+/home/xiaoming/https/letsencrypt/certbot-auto renew --force-renew --pre-hook "service nginx stop" --post-hook "service nginx start"
 #第一行是指此脚本使用/bin/sh 来执行
 #第二行中--force-renew参数代表强制更新
 #重启ngiinx
@@ -198,7 +198,7 @@ PATH=/etc:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 
 退出并保存，然后给脚本添加可执行权限(这里的文件路径填写你自己的文件路径)
 ```sh 
-chmod +x /home/sizegang/https/updatessl.sh
+chmod +x /home/xiaoming/https/updatessl.sh
 ```
             
 ## 创建定时任务
@@ -206,7 +206,7 @@ chmod +x /home/sizegang/https/updatessl.sh
  
  然后在文件末尾添加一行内容： **(我这里代表每月28号更新一次证书文件，文件路径填写你自己的文件路径 )**  
  ```sh 
- 0  0  28 *  * sh /home/sizegang/https/updatessl.sh
+ 0  0  28 *  * sh /home/xiaoming/https/updatessl.sh
  ```            
  **具体格式如下:**
 >Minute Hour Day Month Dayofweek command

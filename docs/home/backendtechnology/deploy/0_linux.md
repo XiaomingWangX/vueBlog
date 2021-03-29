@@ -143,9 +143,9 @@ title: Linux基本技术
     useradd -s (SHELL)
     useradd -d (用户目录)
   ```
-  如：<code>useradd sizegang</code>
+  如：<code>useradd xiaoming</code>
   
-  增加用户名为 sizegang 的账户
+  增加用户名为 xiaoming 的账户
   
   #### 修改用户
   ```sh 
@@ -165,7 +165,7 @@ title: Linux基本技术
   #### 删除用户
   <code>userdel</code> 用户名 (删除用户账号)
   <code>userdel -r</code> 删除账号时同时删除目录
-  如：<code>userdel -r sizegang</code>
+  如：<code>userdel -r xiaoming</code>
   
   删除用户名为 lusifer 的账户并同时删除 lusifer 的用户目录
   

@@ -38,7 +38,7 @@ docker pull mysql:5.7.27
 等待下载完成后，我们就可以在本地镜像列表里查到 REPOSITORY 为 mysql 的镜像
 ## 运行容器
 ```sh 
-docker run -p 3306:3306 --name mysql-sizegang \
+docker run -p 3306:3306 --name mysql-xiaoming \
 -v /usr/local/docker/mysql/conf:/etc/mysql \
 -v /usr/local/docker/mysql/logs:/var/log/mysql \
 -v /usr/local/docker/mysql/data:/var/lib/mysql \
@@ -69,7 +69,7 @@ bc49c9de4cdf        mysql:latest        "docker-entrypoint..."   4 minutes ago  
 会需要额外在启动参数中添加数据卷 mysql_files 
 ```sh 
 ```sh 
-docker run -p 3306:3306 --name mysql-sizegang \
+docker run -p 3306:3306 --name mysql-xiaoming \
 -v /usr/local/docker/mysql/conf:/etc/mysql \
 -v /usr/local/docker/mysql/logs:/var/log/mysql \
 -v /usr/local/docker/mysql/data:/var/lib/mysql \

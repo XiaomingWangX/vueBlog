@@ -15,7 +15,7 @@ title: 组件之间的合并（混入）
         data() {
             return {
                 currentTabComponent: 'NameTwo',
-                sizegang: '司泽刚',
+                xiaoming: '司泽刚',
                 name: "哈哈哈啊，这是测试数据helloworl2112d"
             }
         }

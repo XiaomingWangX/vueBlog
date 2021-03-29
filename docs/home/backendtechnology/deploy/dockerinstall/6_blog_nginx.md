@@ -18,7 +18,7 @@ services:
     volumes:
       - ./conf/nginx.conf:/etc/nginx/nginx.conf
       - ./wwwroot:/usr/share/nginx/wwwroot
-      - ./https:/usr/local/www.sizegang.cn
+      - ./https:/usr/local/www.xiaoming.cn
       - /etc/letsencrypt:/etc/letsencrypt
   tomcat-blog:
     restart: always
@@ -27,7 +27,7 @@ services:
     ports:
       - 8100:8100
     volumes:
-      - /usr/local/docker/jenkins-sizegang/blog:/usr/local/blog
+      - /usr/local/docker/jenkins-xiaoming/blog:/usr/local/blog
       - /usr/local/docker/blog-nginx/tomcat-config/conf:/usr/local/tomcat/conf
     environment:
       TZ: Asia/Shanghai

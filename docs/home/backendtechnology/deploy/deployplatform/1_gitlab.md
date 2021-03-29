@@ -13,7 +13,7 @@ docker images
 ```
 如果显示以下内容，安装镜像成功
 ```sh 
-sizegang@sizegang:/usr/local/docker/gitlab$ docker images
+xiaoming@xiaoming:/usr/local/docker/gitlab$ docker images
 REPOSITORY               TAG                 IMAGE ID            CREATED             SIZE
 twang2218/gitlab-ce-zh   latest              18da462b5ff5        12 months ago       1.61GB
 ```
