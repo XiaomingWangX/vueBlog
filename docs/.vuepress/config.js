@@ -8,7 +8,7 @@ const navConstants = require('./constant/NavConstants');
 module.exports = {//添加标题和搜索框功能
     title: 'Samdoc',
     description: '各种技术，拥有仅有',//
-    base: '/',
+    base: '/xiaomingwang.github.io/',
     port: 9090,
     head: [
         ['link', {rel: 'icon', href: '/img/logo.png'}],
